@@ -1,0 +1,83 @@
+<html>
+    <head>
+	    <title> Aprendendo HTML</title>
+	    <meta charset="utf-8">
+        <script type="text/javascript" src="file:///D:/cursos/PRJ_PROGRAMADOR/APRENDENDO_DHMTL/cadastro/usuariosDynamic.js"
+        ></script>
+
+
+    </head>
+    <body>
+	   <h1>Cadastro em tempo de execução</h1>
+         <fieldset id="formCadastro">
+           <legend>Cadastro de pessoas:</legend>
+           <form>
+           	   <div>
+           	       <label for="nome">Nome........: </label>
+                   <input type="text" name="nome" id="nome" />
+               </div>
+
+               <div>
+
+           	       <label for="sobrenome">Sobrenome: </label>
+                   <input type="text" name="sobrenome" id="sobrenome" />
+               </div>
+
+               <div>
+
+               	<label for="cpf">Cpf............: </label>
+                   <input type="text" name="cpf" id="cpf" />
+               </div>
+
+                <div>
+
+           	      <label for="telefone">Telefone....: </label>
+                   <input type="text" name="telefone" id="telefone" />
+               </div>
+
+               <div>
+
+           	      <label for="endereco">Endereço...: </label>
+                   <input type="text" name="endereco"  id="endereco" />
+               </div>
+
+                <div>
+           	      <hr>
+                   <input type="button" value="Cadastrar" onclick="cadastrarPessoas()" />
+               </div>
+
+
+
+
+
+
+           </form>
+       </fieldset>
+            <input type="button" value="Formulario de Cadastro" id="mostrarFormulario" onclick="mostrarFormulario()" style=" display: none" />
+       <fieldset>
+       <legend>Pessoas Cadastradas</legend>
+       	<table border="1"  id="registros" >
+       		<tr>
+       			<td>Nome</td>
+       			<td>Sobrenome</td>
+       			<td>CPF</td>
+       			<td>Telefone</td>
+       			<td>Endereço</td>
+
+       		</tr>
+       	</table>
+       </fieldset>
+
+
+
+
+
+
+
+
+
+
+   </body>
+
+
+</html>
